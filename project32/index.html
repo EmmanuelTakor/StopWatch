@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice32</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<script src="vue.js"></script>
+<body>
+    <div class="container" id="MyApp">
+        <div class="sectionOne">
+            <div class="secOneLeft">
+                <h4>Time Left</h4> 
+                <span>{{counter}}</span>
+            </div>
+            <div class="secOneRight">
+                <div class="round"></div>
+            </div>
+        </div>
+    <div class="sectionTwo">
+        <div class="options">
+         <div class="op"><h1>Easy</h1></div>
+         <div class="op"><h1>Medium</h1></div>
+          <div class="op"><h1>Difficult</h1></div>
+        </div>
+    </div>
+    <div class="sectionThree">
+        <div class="timeItem">
+          <div> <h2> What's the time?</h2></div>
+        </div>
+    </div>
+    <div class="sectionFour">
+        <div class="youAnswerItem">
+            <div>
+                <h1>Your answer</h1>
+            </div>
+        </div>
+    </div>
+    <div class="sectionFive">
+        <button  v-on:click ="startTimer" id="start"><h1>{{start}}</h1>
+        </button>
+    </div>
+    <div class="sectionSix">
+        <div class="firstSectionSix">
+            <p>
+                <h1>Results</h1>
+                <h3>Trials:3-2-1</h3>
+                <h2>Score</h2>
+            </p>
+        </div>
+        <div class="secondSectionSix">
+            <div class="category">
+                <h2>Category</h2>
+               <select name="Category" id="Category">
+                <option value="Standard">Standard</option>
+                <option value="Custom">Custom</option>
+               </select>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+new Vue({
+    el:"#MyApp",
+    data:{
+        counter:10000,
+        start:"Start",
+        stop:"Stop",
+        buttonEl:"<button>Stop</button>"
+    },
+    methods:{
+        startTimer: function(){
+            setInterval(() => {
+                this.counter--
+            }, 1000);
+        },
+
+    }
+})
+
+
+
+
+    </script>
+
+
+</body>
+</html>

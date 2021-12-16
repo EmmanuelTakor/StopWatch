@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<script src="vue.js"></script>
+<body>
+    <!-- <div id="MyApp"> -->
+<!-- 
+<p>
+    {{greeting}}
+    <a v-bind:href="link">{{Google}}</a>
+    <button v-on:click="startCount">startCounter</button>
+    <span>{{counter}}</span>
+    <p v-html="nom">Salute </p>
+</p>
+
+    </div> -->
+
+    <div class="bg-gradient-to-bl from-red-400 via-blue-400 to-indigo-700 text-white h-screen w-screen overflow-hidden" id="MyApp">
+        <div class="form-container w-1/2 m-auto relative top-16">
+
+        <form class="login-form-section bg-white rounded-lg w-full flex flex-col justify-center items-center">
+
+            <input type="text" class="form-inputs p-3 my-2 outline-none bg-gray-100 border rounded-lg w-full text-black mx-5" placeholder="Enter Name" v-model:value ="Name">
+            <input type="text" class="form-inputs p-3 my-2 outline-none bg-gray-100 border rounded-lg w-full text-black mx-5" placeholder="Enter Email">
+            <input type="password" class="form-inputs p-3 my-2 outline-none bg-gray-100 border rounded-lg w-full text-black mx-5" placeholder="Enter User Name">
+
+        </form>
+        </div>
+
+
+        <div class="form-container w-1/2 m-auto relative top-16 mt-5">
+
+            <form class="login-form-section bg-white rounded-lg w-full flex flex-col justify-center items-center">
+    
+                <input type="text" class="form-inputs p-3 my-2 outline-none bg-gray-100 border rounded-lg w-full text-black text-center mx-5" placeholder="Enter Name" v-bind:value="Name">
+                <input type="text" class="form-inputs p-3 my-2 outline-none bg-gray-100 border rounded-lg w-full text-black text-center mx-5" placeholder="Enter Email">
+                <input type="password" class="form-inputs p-3 my-2 outline-none bg-gray-100 border rounded-lg w-full text-black text-center mx-5" placeholder="Enter User Name" >
+    
+            </form>
+            </div>
+    </div>
+
+
+    
+<script>
+new Vue({
+    el:"#MyApp",
+    data:{
+        greeting:"Hello Mr Kambang",
+        link:"https://google.cm",
+        Google:"Google",
+        counter:0,
+        nom:"<span>Mr Kambang and friends</span>",
+        Name,Email,Username
+    },
+    methods:{
+        startCount: function(){
+            setInterval(()=>{
+                this.counter++;
+            },1000)
+        },
+    }
+})
+
+</script>
+
+
+
+</body>
+</html>

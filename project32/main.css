@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-family: 'Open Sans Condensed', serif;
+    overflow: hidden;
+}
+
+
+.sectionOne{
+height: 11vh;
+width: 100%;
+background-color: #09A7A1;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.secOneLeft{
+    align-self: center;
+    cursor: pointer;
+}
+/* .sectionOne span{
+    color: black;
+} */
+.round{
+height: 70px;
+width: 70px;
+border-radius: 50%;
+background-image: url(assets/pexels-jennifer-enujiugha-4176695.jpg);
+background-size: cover;
+background-position-y: center;
+cursor: pointer;
+
+}
+.sectionTwo{
+    height: 37vh;
+    width: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options{
+    height: 25vh;
+    width: 25%;
+    background-color: #09A7A1;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.op{
+    width: 15vw;
+    border-radius: 2px;
+}
+.op:hover{
+    cursor: pointer;
+    background-color: #06817d;
+}
+
+
+
+span{
+    padding: 4%;
+    color: white;
+}
+
+span:hover{
+    background-color:#077c78 ;
+}
+
+.sectionThree{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    }
+.timeItem{
+    height: 5vh;
+    background-color: #09A7A1;
+    width: 25%;
+    /* text-align: center; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.timeItem:hover{
+    background-color: #06817d;
+}
+.youAnswerItem{
+    height: 8vh;
+    background-color: #09A7A1;
+    width: 55%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.youAnswerItem:hover{
+    background-color: #06817d;
+}
+.sectionFour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#start{
+    border: none;
+    background-color: #09A7A1;
+    font-family: serif;
+    display: block;
+    margin: auto;
+    width: 10%;
+    height: 5vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#start:hover{
+    background-color: #06817d;
+}
+.sectionFive{
+    height: 10vh;
+    width: 100%;
+    /* background-color: violet; */
+    margin-top: 2%;
+}
+.sectionSix{
+    height: 10vh;
+    width: 100%;
+    background-color: #09A7A1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Category{
+    padding: 6%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    /* margin-right: 6vw; */
+}
+button{
+    color: white;
+    cursor: pointer;
+}
+.firstSectionSix{
+    cursor: pointer;
+}
